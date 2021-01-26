@@ -1,0 +1,33 @@
+.container {
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px -6px black;
+  margin: 10px;
+  width: 205px;
+  height: 205px;
+  float: left;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+}
+
+.container:hover {
+  background-color: rgb(14, 14, 13);
+}
+
+.profile {
+  background-color: #182675;
+}
+
+.interests {
+  background-color: #c70039;
+}
+
+.learn {
+  background-color: #f37121;
+}
+.expectations {
+  background-color: #fdb827;
+}
+
+.hobbies {
+  background-color: #1fe218;
+}
