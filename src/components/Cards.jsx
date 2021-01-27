@@ -1,31 +1,34 @@
-import React from 'react'
-import { Expectations } from './Expectations'
-import { Hobbies } from './Hobbies'
-import { Interests } from './Interests'
-import { Learn } from './Learn'
-import { Profile } from './Profile'
-import './styles.css'
+import React from 'react';
+import { dataCards } from '../data/dataCards';
+import './styles.css';
 
 export const Cards = () => {
-	const textCards = {
-		profile: {
-			name: 'Soy Mariangel',
-			age: 'Tengo 32 años',
-			country: 'Soy de Venezuela'
-		}
-	}
 
+	function generarNumero(numero){
+		return (Math.random()*numero).toFixed(0);
+	  }
+	  
+	  function colorRGB(){
+		var coolor = "("+generarNumero(255)+"," + generarNumero(255) + "," + generarNumero(255) +")";
+		return "rgb" + coolor;
+	  
+	  }
 	return (
-		<>
-			<h1>Presentacion Personal</h1>
-			<div>
-				<Profile profile='Profile' textCards={textCards.profile}/>
-				<Interests interests='Interests'/>
-				<Learn learn='Learn'/>
-				<Expectations expectations='Expectations'/>
-				<Hobbies hobbies='Hobbies'/>
-			</div>
-
-		</>
+	<div>
+		{dataCards.map( (card) => (
+		<div className='container card' style={{background: colorRGB()}}key={card.titel}>
+			<h2>{card.titel}</h2>
+				<li>
+					{card.item1}
+				</li>
+				<li>
+					{card.item2}
+				</li>
+				<li>
+					{card.item3}
+				</li>
+		</div>
+		))}
+	</div>
 	)
 }
