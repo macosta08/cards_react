@@ -1,14 +1,15 @@
 import React from 'react'
 import './styles.css'
-export const Profile = () => {
+export const Profile = ({profile, textCards}) => {
+	const {name, age, country} = textCards;
 	return (
 		
 		<div className='container profile'>			
-			<h2>Perfil</h2>
+			<h2>{profile}</h2>
 			
-			<li>Soy Mariangel</li>
-			<li>Tengo 32 años</li>
-			<li>Soy de Venezuela</li>
+			<li>{name}</li>
+			<li>{age}</li>
+			<li>{country}</li>
 		
 		</div>
 	)

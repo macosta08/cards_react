@@ -1,9 +1,9 @@
 import React from 'react'
 import './styles.css'
-export const Interests = () => {
+export const Interests = ({interests}) => {
 	return (
 		<div className='container interests'>
-			<h2>Interes</h2>
+			<h2>{interests}</h2>
 			
 				<li>
 					El desarrollo web

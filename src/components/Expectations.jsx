@@ -1,9 +1,9 @@
 import React from 'react'
 import './styles.css'
-export const Expectations = () => {
+export const Expectations = ({ expectations }) => {
 	return (
 		<div className='container expectations'>
-		<h2>Expectativas</h2>
+		<h2>{ expectations }</h2>
 		
 			<li>
 				Adquirir excelentes fundamentos en React
@@ -11,9 +11,6 @@ export const Expectations = () => {
 			<li>
 				Desarrollar aplicaciones complejas
 			</li>
-			<li>
-				Integración con base de datos
-			</li>
 	</div>
-	)
+	);
 }

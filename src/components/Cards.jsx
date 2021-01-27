@@ -7,15 +7,23 @@ import { Profile } from './Profile'
 import './styles.css'
 
 export const Cards = () => {
+	const textCards = {
+		profile: {
+			name: 'Soy Mariangel',
+			age: 'Tengo 32 años',
+			country: 'Soy de Venezuela'
+		}
+	}
+
 	return (
 		<>
 			<h1>Presentacion Personal</h1>
 			<div>
-				<Profile />
-				<Interests />
-				<Learn />
-				<Expectations />
-				<Hobbies />
+				<Profile profile='Profile' textCards={textCards.profile}/>
+				<Interests interests='Interests'/>
+				<Learn learn='Learn'/>
+				<Expectations expectations='Expectations'/>
+				<Hobbies hobbies='Hobbies'/>
 			</div>
 
 		</>

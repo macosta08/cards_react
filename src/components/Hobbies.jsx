@@ -1,9 +1,9 @@
 import React from 'react'
 import './styles.css'
-export const Hobbies = () => {
+export const Hobbies = ({hobbies}) => {
 	return (
 		<div className='container hobbies'>
-		<h2>Hobbies</h2>
+		<h2>{hobbies}</h2>
 		
 			<li>
 				Pasear con mi familia
