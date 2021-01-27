@@ -8,22 +8,3 @@
   font-size: 15px;
   color: rgb(255, 255, 255);
 }
-
-.container:hover {
-  background-color: rgb(14, 14, 13);
-}
-
-.interests {
-  background-color: #c70039;
-}
-
-.learn {
-  background-color: #f37121;
-}
-.expectations {
-  background-color: #fdb827;
-}
-
-.hobbies {
-  background-color: #1fe218;
-}
